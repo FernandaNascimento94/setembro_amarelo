@@ -2,7 +2,7 @@ import random
 from flask import Flask, jsonify
 from api.carregar_mensagens import carregar_mensagens
 
-mensagens_motivacionais = carregar_mensagens("bancodemensagens.csv")
+mensagens_motivacionais = carregar_mensagens("api/bancodemensagens.csv")
 app = Flask(__name__)
 
 # codigo de exemplo do vercel

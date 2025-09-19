@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from api.carregar_mensagens import carregar_mensagens
 
-mensagens_motivacionais = carregar_mensagens("bancodemensagens.csv")
+mensagens_motivacionais = carregar_mensagens("api/bancodemensagens.csv")
 app = Flask(__name__)
 CORS(app)
 

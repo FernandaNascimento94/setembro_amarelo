@@ -1,6 +1,6 @@
 import random
 from flask import Flask, jsonify
-from carregar_mensagens import carregar_mensagens
+from api.carregar_mensagens import carregar_mensagens
 
 mensagens_motivacionais = carregar_mensagens("bancodemensagens.csv")
 app = Flask(__name__)

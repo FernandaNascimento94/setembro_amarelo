@@ -1,9 +1,11 @@
 import random
 from flask import Flask, jsonify
+from flask_cors import CORS
 from api.carregar_mensagens import carregar_mensagens
 
 mensagens_motivacionais = carregar_mensagens("bancodemensagens.csv")
 app = Flask(__name__)
+CORS(app)
 
 # codigo de exemplo do vercel
 # @app.route('/')
